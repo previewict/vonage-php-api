@@ -1,4 +1,10 @@
 {
+  "name": "previewict/vonage-php-api",
+  "description": "PHP API for Vonage Cloud Phone System",
+  "keywords": ["vonage", "cloud", "phone", "crm"],
+  "homepage": "https://previewict/vonage-php-api",
+  "license": "MIT",
+
   "require": {
     "guzzlehttp/guzzle": "~5.0"
   },
