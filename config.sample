@@ -1,0 +1,3 @@
+<?php
+define('VONAGE_USERNAME', 'YourVonageUserName');
+define('VONAGE_PASSWORD', 'YourVonagePassword');
