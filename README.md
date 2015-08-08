@@ -18,7 +18,11 @@ Copy/paste _config.sample_ & rename it to config.php with your Vonage Username &
 require "vendor/autoload.php";
 require "config.php";
 
-$vonage = new \Vonage\Vonage(VONAGE_USERNAME, VONAGE_PASSWORD);
-var_dump($vonage->makeCall('NumberToCall')); die();
+$vonage = new \Vonage\Vonage('vonageUsername', 'VonagePassword');
+$params = array(
+    'start' => date('Y-m-d\TH:i:sP')
+);
+var_dump($vonage->request('callhistory/{VonageExtensionNumber}', $params)); die();
 ```
-The above call will return "OK" if call happen. Now pickup the phone and start talking.
+
+See the result as PHP debug format.
