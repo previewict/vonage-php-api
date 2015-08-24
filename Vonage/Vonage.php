@@ -56,4 +56,12 @@ class Vonage
         }
 
     }
+
+    /**
+     * @return CookieJar
+     */
+    public function getCookie()
+    {
+        return $this->cookie;
+    }
 }
